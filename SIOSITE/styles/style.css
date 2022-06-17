@@ -1,0 +1,130 @@
+#popup1 {
+	size:50%;
+	position:fixed;
+	top:0;
+	left:0;
+	width:99vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:solid 10px red;
+	justify-content:center;
+	text-align:center;
+	}
+		
+#popup2 {
+	background-color:rgba(255,255,255,0,0.9);
+	border: solid 1px #880;
+	border-radius:10px;
+	padding:10px;
+	background-color:yellow;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family:logo;
+	src : url("fonts/Amore.otf");
+	}
+	
+	
+#imgFord {
+	width:15%;
+    margin:20px;
+	transition: transform 0.5s;
+	}
+		
+#imgFord:hover {
+	transform:scale(1.5);
+	}
+		
+#imgAuth {
+	width:20%;
+    margin: 20px;
+    }
+	
+	
+#banniere {
+	height:10%;
+	border : solid 1px red ;
+	display : flex;
+	justify-content : space-between;
+	align-items : center;
+	background-image:url(images/backpan.jpg);
+	background-size:cover;
+	margin-bottom:5px;
+	padding:5px;
+	border: solid 1px red;
+	color:white;
+	font-size:30px;		
+	}
+		
+#logo {
+	text-align: center;
+	border : solid 1px blue ;
+	font-family:logo;
+	font-size:2em;
+	text-shadow: 5px 5px 5px black;
+	background-color:rgba(255,255,255,0.5);
+	}
+	
+#menuH {
+	border : solid 1px purple ;
+	margin-left: 40%;
+    left: 40%;
+	}
+		
+#menuH, #menuV, #contenu, #pied{
+	border: solid 1px #444;
+	padding:2px;
+	margin:2px;
+	background: linear-gradient(0.1turn,#bad6ff,white,#bad6ff);
+	border-radius:5px;
+
+	}
+		
+		
+		
+#main {
+	border : solid 1px red ;
+	display:flex;
+	}
+		
+		
+#menuV {
+	text-align: center;
+	border : solid 1px green ;	
+	}
+		
+		
+#contenu {
+	border : solid 1px orange ;
+	width:100%;
+	min-height:200px;
+	}
+		
+		
+#pied {
+	border-top : solid 1px gray ;
+	text-align:center;
+	position:fixed;
+	bottom:0;
+    left:0;
+    right:0;
+	width:99.5%
+	}

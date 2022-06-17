@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrnpXGr3WD-xKcu51Bsed6vXppjJn8c-B_8Q&usqp=CAU>
+<input type=text>
+<div></div>
+
+<button onclick=$('img').toggle()>1 GO!</button>
+<button onclick=$('input').val('test')>2 GO!</button>
+<button onclick=alert($('input').val())>3 GO!</button>
+<button onclick = "$('div').append('<b>coucou</b>')">4 GO!</button>
+<button onclick = "$('div').prepend('<b>coucou</b>')">5 GO!</button>
+<button onclick = "$('div').after('<b>coucou</b>')">6 GO!</button>
+<button onclick = "$('div').before('<b>coucou</b>')">7 GO!</button>
+
+
+<script>
+  $('img').on('mouseover', function () {
+    $(this).css('transform' , 'rotate(0.1turn) scale(1.2)')
+
+  } );
+  $('img').on('mouseout', function () {
+    $(this).css('transform' , 'rotate(0) scale(1)')
+  } );
+
+</script>

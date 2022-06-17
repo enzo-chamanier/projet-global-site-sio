@@ -1,0 +1,48 @@
+1/ Message de confirmation
+2/ Envoi du mail de confirmation de l'adresse mail
+3/ Gérer les erreurs possibles
+    - Login déjà utilisé 
+    - Login contient des caractères interdits (expressions régulière)
+    - Mail déjà utilisé
+    - Mail n'est pas au bon format
+    - Mot de passe mal confirmé 
+    - Mot de passe contient le Login
+    - Mot de passe n'a pas la longueur minimale 
+    - Vérification sur onkeyup de la disponibilité du Login (AJAX)
+        - Vérification sur onkeyup de la disponibilité du mail (AJAX)
+    - Vérification en Javascript de la validité du formulaire :
+        1/ sur le onsubmit
+        2/ sur le onkeyup
+4/ Afficher proprement les erreurs SQL
+
+ALTER TABLE user ADD COLUMN
+usr_pseudo varchar(255) null,
+usr_nom varchar(255) default '',
+usr_prenom varchar(255) default '',
+usr_sexe ENUM('H','F') null,
+usr_date_de_naissance DATE null,
+usr_adresse_postale TEXT null,
+usr_telephone varchar(255) null,
+usr_date_derniere_connexion DATETIME null,
+usr_ip_derniere_connexion varchar(255) null,
+usr_privacy int 2147483647,
+usr_active tinyint default 1;
+
+- Dossier :
+    - Description en quelques lignes du projet
+    - Fonctionnalités exhaustives par type d'utilisateur
+    - BDD (MCD ou modèle relationnel)
+    - Tableau des Fonctionnalités et des TODO:
+        Que faut-il faire  ? Par qui ? Etat d'avancement
+
+Connexion 
+Ajout des vols
+Ajouts des destinations 
+
+Table livre_d_or :
+ALTER TABLE livredor ADD COLUMN
+ldor_id int primary_key auto_increment,
+ldor_date datetime,
+ldor_nom varchar(255),
+ldor_email varchar(255),
+ldor_message text;
